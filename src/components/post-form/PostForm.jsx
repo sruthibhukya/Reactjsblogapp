@@ -111,7 +111,7 @@ export default function PostForm({ post }) {
                         rules={{ required: true }}
                         render={({ field }) => (
                             <Editor
-                                apiKey='6lzyntomzd2yrjx0v0anoyu139p87eeay04hxjx042eah8qi'
+                            apiKey={process.env.REACT_APP_TINYMCE_API_KEY}
                                 onInit={(_evt, editor) => {
                                     editorRef.current = editor;
                                 }}
